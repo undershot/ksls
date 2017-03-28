@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Funny Face 2015</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/text.css"/>
+	<link rel="stylesheet" href="css/960.css"/>
+	<link rel="stylesheet" href="css/demo.css"/>
+	<!--<link rel="stylesheet" href="css/party.css"/>-->
+	<link rel="stylesheet" href="css/my.css"/>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" defer></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+
+	<style id="top_styles">
+		/* CSS Document */
+		body{
+			background: url("./images/main_bg.jpg") repeat-x scroll left top #4396CA;
+			font-family: "Arial";
+			color: #000;
+			text-decoration: none;
+		}
+
+		h1{ font-size:24px;color:#FFF;}
+
+		.logo{width:220px;}
+
+		#picture{
+			border:1px solid;
+			background-color:#FFF;
+			overflow: hidden;
+		}
+
+		.picture{
+			width:460px;
+			height:600px;
+		}
+
+		.button{ width:60px;}
+
+		.attention{color:#F00;}
+
+		#imageFace{
+			background:url("./images/faces/Face_3.jpg") no-repeat bottom;
+			background-size:100%;
+			z-index:-1;
+		}
+
+		.accessories{
+			display:inline-block;
+			margin:10px;
+		}
+
+		.instructions{
+			font-size:18px;
+		}
+
+		.center{text-align:center;}
+
+		.drop{
+			border:2px dotted;
+			margin-top: 20px;
+		}
+
+		/*MENU*/
+		.submenu{
+			background-color:#8ec33e;
+			/*display:none;*/
+			border: 2px solid #4d4d4d;
+			border-radius:5px;
+		}
+		.menuitem{
+			display:inline-block;
+			margin-left:10px;
+			width:60px;
+			height:60px;
+			background-color:#FFF;
+		}
+		#menu_1{
+			background:url("./images/ico_glasses.png") no-repeat;
+			background-size:100%;
+		}
+		#menu_2{
+			background:url("./images/ico_beards.png") no-repeat;
+			background-size:100%;
+		}
+		#menu_3{
+			background:url("./images/ico_hats.png") no-repeat;
+			background-size:100%;
+		}
+		/*GLASSES*/
+		.glasses{
+			z-index:1;
+			width:200px;
+			height:70px;
+			background-color:#FFF;
+		}
+		#glasses_1{
+			background:url("./images/accessories/GLASSES_1.png") no-repeat;
+			background-size:100%;
+		}
+		#glasses_2{
+			background:url("./images/accessories/GLASSES_2.png") no-repeat;
+			background-size:100%;
+		}
+		#glasses_3{
+			background:url("./images/accessories/GLASSES_3.png") no-repeat;
+			background-size:100%;
+		}
+		/*BEARDS*/
+		.beards{
+			z-index:2;
+			width:110px;
+			height:150px;
+			background-color:#FFF;
+		}
+		#beards_1{
+			background:url("./images/accessories/BEARD_1.png") no-repeat;
+			background-size:100%;
+		}
+		#beards_2{
+			background:url("./images/accessories/BEARD_2.png") no-repeat;
+			background-size:100%;
+		}
+		#beards_3{
+			background:url("./images/accessories/BEARD_3.png") no-repeat;
+			background-size:100%;
+		}
+		#beards_4{
+			background:url("./images/accessories/BEARD_4.png") no-repeat;
+			background-size:100%;
+		}
+		/*HATS*/
+		.hats{
+			z-index:3;
+			width:110px;
+			height:120px;
+			background-color:#FFF;
+		}
+		#hats_1{
+			background:url("./images/accessories/HAT_1.png") no-repeat;
+			background-size:100%;
+		}
+		#hats_2{
+			background:url("./images/accessories/HAT_2.png") no-repeat;
+			background-size:100%;
+		}
+		#hats_3{
+			background:url("./images/accessories/HAT_3.png") no-repeat;
+			background-size:100%;
+		}
+		#hats_4{
+			background:url("./images/accessories/HAT_4.png") no-repeat;
+			background-size:100%;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="container_12">
+	<div class="grid_3">
+		<img src="images/LOGO_FunnyFace.png" alt="Funny Face 2015" class="logo"/>
+	</div>
+	<div class="grid_9 center">
+		<p class="instructions">Play with the available acessories in your face.</p>
+		<div id="menu_1" class="menuitem" title="Glasses"></div>
+		<div id="menu_2" class="menuitem" title="Beards"></div>
+		<div id="menu_3" class="menuitem" title="Hats"></div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="grid_12 submenu center">
+		<!--<div id="glasses_1" class="glasses accessories"></div>
+		<div id="glasses_2" class="glasses accessories"></div>
+		<div id="glasses_3" class="glasses accessories"></div>-->
+	</div>
+
+	<div class="grid_12 submenu center">
+		<div id="beards_1" class="beards accessories"></div>
+		<div id="beards_2" class="beards accessories"></div>
+		<div id="beards_3" class="beards accessories"></div>
+		<div id="beards_4" class="beards accessories"></div>
+	</div>
+
+	<div class="grid_12 submenu center">
+		<div id="hats_1" class="hats accessories"></div>
+		<div id="hats_2" class="hats accessories"></div>
+		<div id="hats_3" class="hats accessories"></div>
+		<div id="hats_4" class="hats accessories"></div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="grid_4 prefix_4 suffix_4">
+		<form action="">
+			<p class="drop" id="dropzone">
+				Drop your face file here <br/>
+				<span class="attention">Only JPG file. Maximum 300 Kb.</span>
+			</p>
+		</form>
+	</div>
+	<div class="clear"></div>
+
+
+	<div class="grid_2 prefix_3 suffix_2 center">Size</div>
+	<div class="grid_2 suffix_3 center">Rotate</div>
+	<div class="clear"></div>
+
+	<div class="grid_1 prefix_3">
+		<button id="plus" class="button">+</button>
+	</div>
+	<div class="grid_1 suffix_2">
+		<button id="minus" class="button">-</button>
+	</div>
+	<div class="grid_1">
+		<button id="left" class="button">Left</button>
+	</div>
+	<div class="grid_1 suffix_3">
+		<button id="right" class="button">Right</button>
+	</div>
+	<div class="clear"></div>
+
+	<div class="grid_6 prefix_3 suffix_3">
+		<div id="picture" class="picture">
+			<div id="imageFace" class="picture selectable"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="grid_4 prefix_4 suffix_4 center">
+		<p>
+			<button id="save" class="button">Save Picture</button>
+		</p>
+	</div>
+	<div class="clear"></div>
+	<div class="grid_12">
+		<p>
+			Funny Face - 43º WorldSkills Competition - São Paulo - 2015. All rights reserved.
+		</p>
+	</div>
+	<div class="clear"></div>
+
+	<img src="" id="asd" alt="">
+	<canvas id="canvas" width="700" height="700" style="display: none"></canvas>
+
+	<script src="./src/main.js" defer></script>
+</body>
+</html>

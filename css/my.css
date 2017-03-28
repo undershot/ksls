@@ -1,0 +1,21 @@
+.highlight{
+	/*border: 3px solid red;*/
+}
+.selected {
+	border: 2px dotted red;
+}
+
+.picture{
+	transition: transform .15s;
+}
+
+.accessories{
+	transition: transform .15s;
+	transform: scale(1);
+	cursor: move;
+}
+
+.accessories:not(.ui-draggable-dragging){
+	transform: scale(1);
+	transition: top .2s, left .2s, transform .15s;
+}
